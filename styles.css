@@ -9,7 +9,6 @@ body {
   justify-content: center;
 }
 
-
 .hero,
 .header,
 .footer {
@@ -129,10 +128,9 @@ button,
   max-width: 22vw;
   gap: 2vh;
   color: #1f2937;
-
 }
 
-.img-desc .text{
+.img-desc .text {
   font-size: 2vh;
 }
 
@@ -146,7 +144,7 @@ button,
   flex-grow: 1;
 }
 
-.sign-up  {
+.sign-up {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,7 +164,7 @@ button,
 
 .sign-up .container button {
   border: #f9faf8 0.3vh solid;
-  color:#f9faf8;
+  color: #f9faf8;
   padding: 0.3em 2em;
 }
 
@@ -185,8 +183,7 @@ button,
   padding: 4vh 0;
 }
 
-
-button{
+button {
   padding: 0.65vh 1.8vw;
   border: 0;
   color: #f9faf8;
@@ -208,17 +205,26 @@ a {
   color: #e5e7eb;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .hero {
     flex-wrap: wrap;
-    }
+  }
   .hero img {
     width: 100%;
   }
-    .information .img-desc {
-      flex-wrap: wrap;
-    }
-  .img-desc img{
-    max-width: 100%;
+  .information .img-desc {
+    flex-wrap: wrap;
   }
+  .img-desc img {
+    max-width: 200%;
   }
+  .info-header{
+    font-size: 3vh;
+  }
+  .quote-text {
+    font-size: 3.5vh;
+  }
+  .img-desc .text {
+    font-size: 2.5vh;
+  }
+}
