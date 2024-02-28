@@ -18,7 +18,7 @@ body {
 
 .hero-desc,
 .link a {
-  font-size: 1.2em;
+  font-size: 2vh;
 }
 
 .hero-desc {
@@ -26,7 +26,7 @@ body {
 }
 
 .logo {
-  font-size: 1.5em;
+  font-size: 2.25vh;
   color: #f9faf8;
   font-weight: 800;
 }
@@ -37,7 +37,7 @@ button,
 }
 
 .info-header {
-  font-size: 2.25em;
+  font-size: 2.75vh;
   font-weight: 800;
   color: #1f2937;
   text-align: center;
@@ -46,7 +46,7 @@ button,
 
 .quote {
   background-color: #e5e7eb;
-  font-size: 2.25em;
+  font-size: 4vh;
   color: #1f2937;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,7 @@ button,
 
 .author {
   text-align: right;
-  font-size: 0.6em;
+  font-size: 2.5vh;
   font-weight: 800;
 }
 
@@ -100,7 +100,7 @@ button,
 }
 
 .hero-title {
-  font-size: 3em;
+  font-size: 5vh;
   font-weight: 800;
   color: #f9faf8;
 }
@@ -132,6 +132,10 @@ button,
 
 }
 
+.img-desc .text{
+  font-size: 2vh;
+}
+
 .img-desc img {
   border: 0.4vh solid #3882f6;
   border-radius: 1vh;
@@ -157,6 +161,7 @@ button,
   padding: 10vh 10vw;
   border-radius: 2vh;
   gap: 2vw;
+  flex-wrap: wrap;
 }
 
 .sign-up .container button {
@@ -170,7 +175,7 @@ button,
 }
 
 .sign-up-title {
-  font-size: 1.4em;
+  font-size: 3vh;
   font-weight: 550;
 }
 
@@ -189,15 +194,31 @@ button{
   font-weight: 800;
   font-family: "Roboto";
   cursor: pointer;
+  font-size: 2vh;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  gap: 1vw;
+  gap: 2vh;
 }
 
 a {
   text-decoration: none;
   color: #e5e7eb;
 }
+
+@media (max-width: 1000px){
+  .hero {
+    flex-wrap: wrap;
+    }
+  .hero img {
+    width: 100%;
+  }
+    .information .img-desc {
+      flex-wrap: wrap;
+    }
+  .img-desc img{
+    max-width: 100%;
+  }
+  }
