@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap);
 
+/* General Styles */
 body {
   font-family: "Roboto";
   margin: 0;
@@ -9,71 +10,48 @@ body {
   justify-content: center;
 }
 
-.hero,
-.header,
-.footer {
-  background-color: #1f2937;
-}
-
-.hero-desc,
-.link a {
-  font-size: 2vh;
-}
-
-.hero-desc {
+a {
+  text-decoration: none;
   color: #e5e7eb;
 }
 
-.logo {
-  font-size: 2.25vh;
+button {
+  padding: 0.65vh 1.8vw;
+  border: 0;
   color: #f9faf8;
+  border-radius: 0.8vh;
   font-weight: 800;
+  font-family: "Roboto";
+  cursor: pointer;
+  font-size: 2vh;
 }
 
-button,
-.sign-up .container {
-  background-color: #3882f6;
-}
-
-.info-header {
-  font-size: 2.75vh;
-  font-weight: 800;
-  color: #1f2937;
-  text-align: center;
-  padding-top: 4vh;
-}
-
-.quote {
-  background-color: #e5e7eb;
-  font-size: 4vh;
-  color: #1f2937;
+ul {
+  list-style-type: none;
   display: flex;
-  flex-direction: column;
-  padding: 16vh 23vw;
+  gap: 2vh;
 }
 
-.quote-text {
-  font-weight: 100;
-  font-style: italic;
-}
-
-.author {
-  text-align: right;
-  font-size: 2.5vh;
-  font-weight: 800;
-}
-
-.sign-up {
-  padding: 0.8vh 23vw;
-}
-
+/* Header Styles */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1vh 18vw;
+  background-color: #1f2937;
 }
 
+.header .logo {
+  font-size: 2.25vh;
+  color: #f9faf8;
+  font-weight: 800;
+}
+
+.header .link a {
+  font-size: 2vh;
+}
+
+/* Hero Styles */
 .hero {
   display: flex;
   justify-content: space-between;
@@ -81,6 +59,7 @@ button,
   padding-top: 7vh;
   gap: 3.5vh;
   padding: 10vh 18vw;
+  background-color: #1f2937;
 }
 
 .hero div {
@@ -98,12 +77,18 @@ button,
   object-fit: cover;
 }
 
-.hero-title {
+.hero .hero-title {
   font-size: 5vh;
   font-weight: 800;
   color: #f9faf8;
 }
 
+.hero .hero-desc {
+  font-size: 2vh;
+  color: #e5e7eb;
+}
+
+/* Information Styles */
 .information {
   display: flex;
   flex-direction: column;
@@ -111,7 +96,15 @@ button,
   padding: 0.8vh 28vw;
 }
 
-.img-desc {
+.information .info-header {
+  font-size: 2.75vh;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.information .img-desc {
   padding-top: 7vh;
   padding-bottom: 7vh;
   display: flex;
@@ -119,7 +112,7 @@ button,
   gap: 3vw;
 }
 
-.img-desc div {
+.information .img-desc div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,11 +123,11 @@ button,
   color: #1f2937;
 }
 
-.img-desc .text {
+.information .img-desc .text {
   font-size: 2vh;
 }
 
-.img-desc img {
+.information .img-desc img {
   border: 0.4vh solid #3882f6;
   border-radius: 1vh;
   aspect-ratio: 1/1;
@@ -144,10 +137,34 @@ button,
   flex-grow: 1;
 }
 
+/* Quote Styles */
+.quote {
+  background-color: #e5e7eb;
+  font-size: 4vh;
+  color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  padding: 16vh 23vw;
+}
+
+.quote .quote-text {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.quote .author {
+  text-align: right;
+  font-size: 2.5vh;
+  font-weight: 800;
+}
+
+/* Sign Up Styles */
 .sign-up {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.8vh 23vw;
+  background-color: #3882f6;
 }
 
 .sign-up .container {
@@ -172,39 +189,20 @@ button,
   color: #f9faf8;
 }
 
-.sign-up-title {
+.sign-up .sign-up-title {
   font-size: 3vh;
   font-weight: 550;
 }
 
+/* Footer Styles */
 .footer {
   text-align: center;
   color: #f9faf8;
   padding: 4vh 0;
+  background-color: #1f2937;
 }
 
-button {
-  padding: 0.65vh 1.8vw;
-  border: 0;
-  color: #f9faf8;
-  border-radius: 0.8vh;
-  font-weight: 800;
-  font-family: "Roboto";
-  cursor: pointer;
-  font-size: 2vh;
-}
-
-ul {
-  list-style-type: none;
-  display: flex;
-  gap: 2vh;
-}
-
-a {
-  text-decoration: none;
-  color: #e5e7eb;
-}
-
+/* Media Queries */
 @media (max-width: 1000px) {
   .hero {
     flex-wrap: wrap;
@@ -218,7 +216,7 @@ a {
   .img-desc img {
     max-width: 200%;
   }
-  .info-header{
+  .info-header {
     font-size: 3vh;
   }
   .quote-text {
